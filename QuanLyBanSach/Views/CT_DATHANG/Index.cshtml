@@ -1,0 +1,70 @@
+﻿@model IEnumerable<QuanLyBanSach.Models.CT_DATHANG>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DATHANG.makh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SACH.tensach)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.soluongdat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dongia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thanhtien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.delflag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.timedel)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATHANG.makh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SACH.tensach)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.soluongdat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dongia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thanhtien)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.delflag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.timedel)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,58 @@
+﻿@model QuanLyBanSach.Models.KHACHHANG
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div>
+    <h2>Thông tin của @Html.DisplayFor(model => model.tenkh) </h2>
+    <hr />
+    <dl class="dl-horizontal"  style="padding-left:370px; font-size:15px;">
+        <dt>
+            @Html.DisplayNameFor(model => model.tenkh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenkh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diachi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diachi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sodienthoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sodienthoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.matkhaukh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.matkhaukh)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.makh }) |
+    @Html.ActionLink("Trở về", "Index")
+</p>

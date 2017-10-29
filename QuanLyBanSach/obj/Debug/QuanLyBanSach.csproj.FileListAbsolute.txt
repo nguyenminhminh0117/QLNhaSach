@@ -1,0 +1,108 @@
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\ApplicationInsights.config
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\csc.exe
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\System.Collections.Immutable.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\vbc.exe
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\VBCSCompiler.exe
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\roslyn\VBCSCompiler.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\QuanLyBanSach.dll.config
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\QuanLyBanSach.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\QuanLyBanSach.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.Web.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.WindowsServer.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.ApplicationInsights.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.Web.Infrastructure.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Helpers.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Mvc.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Razor.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Webpages.Deployment.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Webpages.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Webpages.Razor.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.Web.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.AI.WindowsServer.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.ApplicationInsights.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Razor.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Webpages.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Webpages.Deployment.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Webpages.Razor.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Helpers.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\System.Web.Mvc.xml
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\obj\Debug\QuanLyBanSach.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\obj\Debug\QuanLyBanSach.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\obj\Debug\QuanLyBanSach.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\PagedList.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\PagedList.Mvc.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\PagedList.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QuanLyBanSach\QuanLyBanSach\bin\PagedList.Mvc.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\ApplicationInsights.config
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\csc.exe
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\System.Collections.Immutable.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\System.Reflection.Metadata.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\vbc.exe
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\VBCSCompiler.exe
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\roslyn\VBCSCompiler.exe.config
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\QuanLyBanSach.dll.config
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\QuanLyBanSach.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\QuanLyBanSach.pdb
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\EntityFramework.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\EntityFramework.SqlServer.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.DependencyCollector.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.Web.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.WindowsServer.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.ApplicationInsights.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.Web.Infrastructure.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\PagedList.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\PagedList.Mvc.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Helpers.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Mvc.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Razor.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Webpages.Deployment.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Webpages.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Webpages.Razor.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\EntityFramework.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\EntityFramework.SqlServer.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.DependencyCollector.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.Web.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.AI.WindowsServer.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.ApplicationInsights.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\PagedList.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\PagedList.Mvc.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Razor.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Webpages.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Webpages.Deployment.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Webpages.Razor.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Helpers.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\bin\System.Web.Mvc.xml
+D:\GitHub\QLNhaSach\QuanLyBanSach\obj\Debug\QuanLyBanSach.csprojResolveAssemblyReference.cache
+D:\GitHub\QLNhaSach\QuanLyBanSach\obj\Debug\QuanLyBanSach.dll
+D:\GitHub\QLNhaSach\QuanLyBanSach\obj\Debug\QuanLyBanSach.pdb

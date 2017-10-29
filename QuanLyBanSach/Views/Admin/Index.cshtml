@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <h2 style="text-align:center;">Mời bạn đăng nhập tài khoản</h2>
+}

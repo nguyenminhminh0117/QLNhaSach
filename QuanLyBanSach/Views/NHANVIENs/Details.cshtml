@@ -1,0 +1,83 @@
+﻿@model QuanLyBanSach.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div>
+    <h2>Thông tin của @Html.DisplayFor(model => model.tennv) </h2>
+    <hr />
+    <dl class="dl-horizontal" style="padding-left:370px; font-size:15px;">
+        <dt>
+            @Html.DisplayNameFor(model => model.QUYEN.tenquyen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QUYEN.tenquyen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tennv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tennv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngaysinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaysinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diachi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diachi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sodienthoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sodienthoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.matkhaunv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.matkhaunv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tinhtrang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tinhtrang)
+        </dd>
+
+    </dl>
+    <p  style="font-size:15px;">
+        @Html.ActionLink("Sửa", "Edit", new { id = Model.manv }) |
+        @Html.ActionLink("Trở về", "Index")
+    </p>
+
+</div>

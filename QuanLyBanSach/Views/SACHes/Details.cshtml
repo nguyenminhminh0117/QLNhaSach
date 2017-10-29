@@ -1,0 +1,129 @@
+﻿@model QuanLyBanSach.Models.SACH
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h2>Thông tin của @Html.DisplayFor(model => model.tensach) </h2>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.THELOAI.tentheloai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.THELOAI.tentheloai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tensach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tensach)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dongiaban)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dongiaban)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.luotmua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.luotmua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.khuyenmai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.khuyenmai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.anhbia)
+        </dt>
+
+        <dd>
+            <img src="~/images/@Model.anhbia" style="width:100px;height:170px;" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tinhtrang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tinhtrang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nhaxuatban)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nhaxuatban)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tacgia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tacgia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngayxuatban)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngayxuatban)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.soluongton)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.soluongton)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.delflag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.delflag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.timedel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.timedel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.masach }) |
+    @Html.ActionLink("Trở về", "Index")
+</p>

@@ -1,0 +1,91 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<QuanLyBanSach.Models.NHANVIEN>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+
+<h2 style="text-align:center;">Thông tin nhân viên</h2> <hr />
+
+<button class="btn-default" style="color:white;">
+    @Html.ActionLink("Tạo mới", "Create")
+</button>
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget-box">
+            <div class="widget-title">
+                <span class="icon"><i class="icon-th"></i></span>
+            </div>
+            <div class="widget-content nopadding">
+                <table class="table table-bordered data-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.FirstOrDefault().QUYEN.tenquyen)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.FirstOrDefault().tennv)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.FirstOrDefault().ngaysinh)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.FirstOrDefault().diachi)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.FirstOrDefault().sodienthoai)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.FirstOrDefault().email)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.FirstOrDefault().tinhtrang)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       @foreach (var item in Model)
+                       {
+                        <tr class="gradeA">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.QUYEN.tenquyen)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.tennv)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ngaysinh)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.diachi)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.sodienthoai)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.tinhtrang)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.manv }) |
+                                @Html.ActionLink("Chi tiết", "Details", new { id = item.manv }) |
+                                @Html.ActionLink("Xóa", "Delete", new { id = item.manv })
+                            </td>
+                        </tr>
+                       }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@*<div class="pagination" style="display:inline ; text-align:right;">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }), PagedListRenderOptions.PageNumbersOnly)
+</div>*@

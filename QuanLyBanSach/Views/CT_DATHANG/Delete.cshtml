@@ -1,0 +1,81 @@
+﻿@model QuanLyBanSach.Models.CT_DATHANG
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CT_DATHANG</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DATHANG.makh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DATHANG.makh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SACH.tensach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SACH.tensach)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.soluongdat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.soluongdat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dongia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dongia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thanhtien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thanhtien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.delflag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.delflag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.timedel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.timedel)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

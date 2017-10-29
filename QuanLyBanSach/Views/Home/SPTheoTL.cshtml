@@ -1,0 +1,22 @@
+﻿@model IEnumerable<QuanLyBanSach.Models.SACH>
+@{
+    ViewBag.Title = "SPTheoTL";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<ul class="thumbnails">
+    @foreach (var s in Model)
+            {
+        <li class="span3" style="width:250px;height:350px;padding-top:40px;padding-bottom:60px;">
+            <div class="thumbnail" style="height:358px">
+                <a href="@Url.Action("Details","SACHes",new { id =s.masach })">
+                    <img src="~/images/@s.anhbia" alt="">
+                </a>
+                <div class="caption">
+                    <h5>@s.tensach</h5>
+                </div>
+            </div>
+        </li>
+    }
+</ul>
+
+

@@ -1,0 +1,120 @@
+﻿@model IEnumerable<QuanLyBanSach.Models.SACH>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="span9">
+    <div class="well well-small">
+        <h4>Featured Products @*<small class="pull-right">200+ featured products</small>*@</h4>
+        <div class="row-fluid">
+            <div id="featured" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail" style="height:300px;width:160px;">
+                                    <i class="tag"></i>
+                                    <a href="@Url.Action("Details","SACHes",new { id ="S00001" })"><img src="~/Images/image1.gif" alt=""></a>
+                                    <div class="caption">
+                                        <h5>Ảo Ảnh Của Thanh Xuân </h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail"  style="height:300px;width:160px;">
+                                    <i class="tag"></i>
+                                    <a href="@Url.Action("Details","SACHes",new { id ="S00003" })"><img src="~/Images/image3.gif" alt=""></a>
+                                    <div class="caption">
+                                        <h5>5 Centimet Trên Giây</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail"  style="height:300px;width:160px;">
+                                    <i class="tag"></i>
+                                    <a href="@Url.Action("Details","SACHes",new { id ="S00004" })"><img src="~/Images/image4.jpg" alt=""></a>
+                                    <div class="caption">
+                                        <h5>Quãng Thời Gian Trong Hồi Ức </h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail"  style="height:300px;width:160px;">
+                                    <i class="tag"></i>
+                                    <a href="@Url.Action("Details","SACHes",new { id ="S00002" })"><img src="~/Images/image2.gif" alt=""></a>
+                                    <div class="caption">
+                                        <h5>Giá Nào Cũng Yêu</h5>
+                                    </div>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail"  style="height:300px;width:160px;">
+                                    <i class="tag"></i>
+                                    <a href="@Url.Action("Details","SACHes",new { id ="S00011" })"><img src="~/Images/image11.jpg" alt=""></a>
+                                    <div class="caption">
+                                        <h5>Đời Này Không Đổi Thay </h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail"  style="height:300px;width:160px;">
+                                    <i class="tag"></i>
+                                    <a href="@Url.Action("Details","SACHes",new { id ="S00013" })"><img src="~/Images/image13.jpg" alt=""></a>
+                                    <div class="caption">
+                                        <h5>Thạch Sanh</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail"  style="height:300px;width:160px;">
+                                    <i class="tag"></i>
+                                    <a href="@Url.Action("Details","SACHes",new { id ="S00014" })"><img src="~/Images/image14.gif" alt=""></a>
+                                    <div class="caption">
+                                        <h5>Mùi Hương ( Tái Bản) </h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail"  style="height:300px;width:160px;">
+                                    <i class="tag"></i>
+                                    <a href="@Url.Action("Details","SACHes",new { id ="S00022" })"><img src="~/Images/image22.jpg" alt=""></a>
+                                    <div class="caption">
+                                        <h5>Những Người Thích Đùa</h5>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#featured" data-slide="next">›</a>
+            </div>
+        </div>
+    </div> @* slide chạy ngang Featured product *@
+    <h4>Latest Products </h4>
+
+    <ul class="thumbnails">
+            @foreach (var s in Model)
+            {
+                <li class="span3" style="width:250px;height:358px;padding-top:35px;padding-bottom:50px;">
+                    <div class="thumbnail" style="height:358px">
+
+                        <a href="@Url.Action("Details","SACHes",new { id =s.masach })">
+                            <img src="~/images/@s.anhbia" alt="">
+                        </a>
+                        <div class="caption">
+                           <h5>@s.tensach</h5>
+                        </div>
+                    </div>
+                </li>
+            }
+    </ul>
+
+
+</div>

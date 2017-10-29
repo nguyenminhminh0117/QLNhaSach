@@ -1,0 +1,62 @@
+﻿@model QuanLyBanSach.Models.BAOCAOTONG
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h3 style="text-align:center;">Xóa hồ sơ báo cáo ngày : @Model.ngay</h3>
+
+<div>
+    <dl class="dl-horizontal" style="padding-left:370px;font-size:15px;">
+        <dt>
+            @Html.DisplayNameFor(model => model.tongthu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tongthu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tongchi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tongchi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chenhlech)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chenhlech)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.delflag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.delflag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.timedel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.timedel)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Trở về", "Index")
+        </div>
+    }
+</div>
