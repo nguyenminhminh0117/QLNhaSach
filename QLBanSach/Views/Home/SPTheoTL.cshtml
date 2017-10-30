@@ -1,0 +1,41 @@
+﻿@model IEnumerable<QLBanSach.Models.SACH>
+@{
+    ViewBag.Title = "SPTheoTL";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+<div class="col-lg-9">
+
+    <div class="row">
+        @foreach (var s in Model)
+            {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="@Url.Action("Details", "SACHes", new { id = s.masach })"> <img class="card-img-top" src="~/images/@s.anhbia" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">@s.tensach</a>
+                        </h4>
+                        <h5>@s.dongiaban</h5>
+                        <p class="card-text"> @s.tacgia</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
