@@ -7,23 +7,21 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using QLBanSach.Models;
-using PagedList;
-using PagedList.Mvc;
 
 namespace QLBanSach.Controllers
 {
-    public class SACHController : Controller
+    public class SachController : Controller
     {
         private QLBS db = new QLBS();
 
-        // GET: SACHes
-        public ActionResult Index(int ? page)
+        // GET: Sach
+        public ActionResult Index()
         {
             var sACHes = db.SACHes.Include(s => s.THELOAI);
-            return View(sACHes.ToList().ToPagedList((page ?? 1), 100));
+            return View(sACHes.ToList());
         }
 
-        // GET: SACHes/Details/5
+        // GET: Sach/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -38,14 +36,14 @@ namespace QLBanSach.Controllers
             return View(sACH);
         }
 
-        // GET: SACHes/Create
+        // GET: Sach/Create
         public ActionResult Create()
         {
             ViewBag.matheloai = new SelectList(db.THELOAIs, "matheloai", "tentheloai");
             return View();
         }
 
-        // POST: SACHes/Create
+        // POST: Sach/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -63,7 +61,7 @@ namespace QLBanSach.Controllers
             return View(sACH);
         }
 
-        // GET: SACHes/Edit/5
+        // GET: Sach/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -79,7 +77,7 @@ namespace QLBanSach.Controllers
             return View(sACH);
         }
 
-        // POST: SACHes/Edit/5
+        // POST: Sach/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -96,7 +94,7 @@ namespace QLBanSach.Controllers
             return View(sACH);
         }
 
-        // GET: SACHes/Delete/5
+        // GET: Sach/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -111,7 +109,7 @@ namespace QLBanSach.Controllers
             return View(sACH);
         }
 
-        // POST: SACHes/Delete/5
+        // POST: Sach/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)

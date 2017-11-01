@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBanSach", "QLBanSach\QLBanSach.csproj", "{66151E98-86D3-4243-BB58-9A91FA435379}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBanSach", "QLBanSach\QLBanSach.csproj", "{1819F448-0298-479A-A0EB-E5D6A39D91A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{66151E98-86D3-4243-BB58-9A91FA435379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66151E98-86D3-4243-BB58-9A91FA435379}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66151E98-86D3-4243-BB58-9A91FA435379}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66151E98-86D3-4243-BB58-9A91FA435379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1819F448-0298-479A-A0EB-E5D6A39D91A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1819F448-0298-479A-A0EB-E5D6A39D91A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1819F448-0298-479A-A0EB-E5D6A39D91A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1819F448-0298-479A-A0EB-E5D6A39D91A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

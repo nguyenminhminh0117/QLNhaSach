@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<QLBanSach.Models.SACH>
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_layoutHomePage.cshtml";
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="col-lg-9">
@@ -43,7 +43,7 @@
         {
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                    <a href="@Url.Action("Details", "SACHes", new { id = s.masach })"> <img class="card-img-top" src="~/Images/@s.anhbia" alt=""></a>
+                    <a href="@Url.Action("Details", "Sach", new { id = s.masach })"> <img class="card-img-top" src="~/Images/@s.anhbia" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">@s.tensach</a>
@@ -59,4 +59,3 @@
         }
     </div>
 </div>
-

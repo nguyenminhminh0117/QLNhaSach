@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="882e8a794c54420fa113828f085cc18e" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.BAOCAOTONG" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.DATHANG" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.HOADON" Width="1.5" PointX="6" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.NHACUNGCAP" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.PHIEUNHAP" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.QUYEN" Width="1.5" PointX="1.5" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.SACH" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.THELOAI" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.BK_BAOCAOTONG" Width="1.5" PointX="8.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.BK_CT_DATHANG" Width="1.5" PointX="9.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.BK_CT_HOADON" Width="1.5" PointX="10.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.BK_SACH" Width="1.5" PointX="10.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.CT_DATHANG" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.CT_HOADON" Width="1.5" PointX="8.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.CT_PHIEUNHAP" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_CT_DATHANG_DATHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_DATHANG_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_CT_HOADON_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_HOADON_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_HOADON_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_PHIEUNHAP_NHACUNGCAP" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_NHANVIEN_QUYEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_PHIEUNHAP_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_CT_PHIEUNHAP_PHIEUNHAP" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_CT_DATHANG_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_CT_HOADON_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_CT_PHIEUNHAP_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyNhaSachModel.FK_SACH_THELOAI" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

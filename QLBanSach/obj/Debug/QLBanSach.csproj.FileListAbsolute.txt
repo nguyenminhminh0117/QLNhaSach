@@ -1,100 +1,103 @@
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\ApplicationInsights.config
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\csc.exe
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CSharp.Core.targets
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\Microsoft.VisualBasic.Core.targets
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\System.Collections.Immutable.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\System.Reflection.Metadata.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\vbc.exe
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\VBCSCompiler.exe
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\roslyn\VBCSCompiler.exe.config
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\QLBanSach.dll.config
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\QLBanSach.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\QLBanSach.pdb
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\EntityFramework.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\EntityFramework.SqlServer.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.Agent.Intercept.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.DependencyCollector.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.PerfCounterCollector.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.ServerTelemetryChannel.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.Web.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.WindowsServer.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.ApplicationInsights.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.Web.Infrastructure.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Helpers.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Mvc.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Razor.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Webpages.Deployment.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Webpages.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Webpages.Razor.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\EntityFramework.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\EntityFramework.SqlServer.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.DependencyCollector.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.ServerTelemetryChannel.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.Web.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.AI.WindowsServer.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.ApplicationInsights.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Razor.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Webpages.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Webpages.Deployment.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Webpages.Razor.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Helpers.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\bin\System.Web.Mvc.xml
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csprojResolveAssemblyReference.cache
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\obj\Debug\QLBanSach.dll
-c:\users\administrator\documents\visual studio 2015\Projects\QLBanSach\QLBanSach\obj\Debug\QLBanSach.pdb
-D:\GitHub\QLNhaSach\QLBanSach\bin\ApplicationInsights.config
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\csc.exe
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\System.Collections.Immutable.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\System.Reflection.Metadata.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\vbc.exe
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\VBCSCompiler.exe
-D:\GitHub\QLNhaSach\QLBanSach\bin\roslyn\VBCSCompiler.exe.config
-D:\GitHub\QLNhaSach\QLBanSach\bin\QLBanSach.dll.config
-D:\GitHub\QLNhaSach\QLBanSach\bin\QLBanSach.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\QLBanSach.pdb
-D:\GitHub\QLNhaSach\QLBanSach\bin\EntityFramework.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\EntityFramework.SqlServer.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.Agent.Intercept.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.DependencyCollector.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.PerfCounterCollector.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.ServerTelemetryChannel.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.Web.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.WindowsServer.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.ApplicationInsights.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.Web.Infrastructure.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Helpers.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Mvc.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Razor.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Webpages.Deployment.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Webpages.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Webpages.Razor.dll
-D:\GitHub\QLNhaSach\QLBanSach\bin\EntityFramework.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\EntityFramework.SqlServer.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.DependencyCollector.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.ServerTelemetryChannel.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.Web.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.AI.WindowsServer.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.ApplicationInsights.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Razor.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Webpages.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Webpages.Deployment.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Webpages.Razor.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Helpers.xml
-D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Mvc.xml
-D:\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.csprojResolveAssemblyReference.cache
-D:\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.dll
-D:\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.pdb
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\ApplicationInsights.config
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\QLBanSach.dll.config
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\QLBanSach.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\QLBanSach.pdb
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\csc.exe
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\csc.exe.config
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\csc.rsp
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\csi.exe
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\csi.exe.config
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\csi.rsp
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.AppContext.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Console.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.IO.Compression.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.IO.Pipes.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Security.Claims.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Threading.Thread.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.ValueTuple.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Xml.XPath.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\vbc.exe
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\vbc.exe.config
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\vbc.rsp
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\VBCSCompiler.exe
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Antlr3.Runtime.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.Web.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.ApplicationInsights.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Newtonsoft.Json.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Net.Http.Formatting.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Helpers.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Http.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Http.WebHost.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Mvc.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Optimization.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Razor.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.WebPages.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.WebPages.Razor.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\WebGrease.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Antlr3.Runtime.pdb
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.Web.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.ApplicationInsights.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\Newtonsoft.Json.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Helpers.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Mvc.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Optimization.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Razor.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.WebPages.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.WebPages.Razor.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Net.Http.Formatting.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Http.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\System.Web.Http.WebHost.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\obj\Debug\QLBanSach.csprojResolveAssemblyReference.cache
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\obj\Debug\QLBanSach.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\obj\Debug\QLBanSach.pdb
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\EntityFramework.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\EntityFramework.SqlServer.dll
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\EntityFramework.xml
+C:\Users\SONY\Desktop\QLBanSach\QLBanSach\bin\EntityFramework.SqlServer.xml
