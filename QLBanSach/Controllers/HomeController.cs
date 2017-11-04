@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace QLBanSach.Controllers
 {
@@ -14,7 +15,6 @@ namespace QLBanSach.Controllers
         {
             return db.SACHes.OrderByDescending(x => x.dongiaban).Take(count).ToList();
         }
-
         public ActionResult Index()
         {
             var sp = Laysp(9);
@@ -30,6 +30,30 @@ namespace QLBanSach.Controllers
         {
             var s = from nh in db.SACHes where nh.matheloai == id select nh;
             return View(s);
+        }
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(KHACHHANG U)
+        {
+            var count = db.KHACHHANGs.Where(x => x.email == U.email && x.matkhaukh == U.matkhaukh).Count();
+            if(count == 0)
+            {
+                ViewBag.Msg = "Invalid user";
+                return View();
+            }
+            else
+            {
+                FormsAuthentication.SetAuthCookie(U.email, false);
+                return RedirectToAction("Index", "Home");
+            }
+        }
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

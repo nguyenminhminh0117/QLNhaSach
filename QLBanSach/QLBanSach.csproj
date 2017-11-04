@@ -178,6 +178,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\DatHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SachController.cs" />
     <Compile Include="Global.asax.cs">
@@ -282,6 +283,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>QLBS.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="Images\icon.ico" />
     <Content Include="Images\image1.gif" />
     <Content Include="Images\image10.gif" />
     <Content Include="Images\image11.jpg" />
@@ -351,6 +353,7 @@
     <Content Include="Scripts\sb-admin-datatables.min.js" />
     <Content Include="Scripts\sb-admin.js" />
     <Content Include="Scripts\sb-admin.min.js" />
+    <Content Include="Scripts\_Login.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="vendor\chart.js\Chart.bundle.js" />
     <Content Include="vendor\chart.js\Chart.bundle.min.js" />
@@ -420,6 +423,15 @@
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\Admin\_LayoutAdmin.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Shared\_Login.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Navigation.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\DatHang\Create.cshtml" />
+    <Content Include="Views\DatHang\Delete.cshtml" />
+    <Content Include="Views\DatHang\Details.cshtml" />
+    <Content Include="Views\DatHang\Edit.cshtml" />
+    <Content Include="Views\DatHang\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
