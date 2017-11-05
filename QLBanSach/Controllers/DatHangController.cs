@@ -15,7 +15,6 @@ namespace QLBanSach.Controllers
         private QLBS db = new QLBS();
 
         // GET: DatHang
-        [Authorize]
         public ActionResult Index()
         {
             var dATHANGs = db.DATHANGs.Include(d => d.KHACHHANG);

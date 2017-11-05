@@ -9,8 +9,9 @@
             type: 'POST',
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(khachHang),
+            crossDomain: true,
             success: function (khachHang) {
-
+                location.href = '/Home/Index';
             },
             error: function (request, message, error) {
                 handlerExeption(request, message, error);

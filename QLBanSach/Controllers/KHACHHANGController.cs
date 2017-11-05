@@ -15,6 +15,7 @@ namespace QLBanSach.Controllers
         private QLBS db = new QLBS();
 
         // GET: KHACHHANG
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.KHACHHANGs.ToList());
@@ -48,6 +49,7 @@ namespace QLBanSach.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "makh,tenkh,diachi,sodienthoai,email,matkhaukh")] KHACHHANG kHACHHANG)
         {
+            kHACHHANG.makh = " ";
             if (ModelState.IsValid)
             {
                 db.KHACHHANGs.Add(kHACHHANG);
