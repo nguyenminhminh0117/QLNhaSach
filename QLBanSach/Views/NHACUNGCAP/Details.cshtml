@@ -1,0 +1,40 @@
+﻿@model QLBanSach.Models.NHACUNGCAP
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
+    <h4>Thông tin nhà cung cấp @Model.tenncc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tenncc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenncc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diachi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diachi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sdtncc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sdtncc)
+        </dd>
+        <p>
+            @Html.ActionLink("Sửa", "Edit", new { id = Model.mancc }) |
+            @Html.ActionLink("Trở về", "Index")
+        </p>
+    </dl>
+</div>

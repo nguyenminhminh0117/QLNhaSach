@@ -1,0 +1,35 @@
+﻿@model QLBanSach.Models.CT_PHIEUNHAP
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal" style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
+        <h4>Sửa thông tin chi tiết phiếu nhập</h4>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.masach)
+
+        @Html.HiddenFor(model => model.mapn)
+
+        @Html.HiddenFor(model => model.soluong)
+
+        @Html.HiddenFor(model => model.gianhap)
+
+        @Html.HiddenFor(model => model.thanhtien)
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu" class="btn btn-default" />
+            </div>
+        </div>
+        <div>
+            @Html.ActionLink("Trở về", "Index")
+        </div>
+    </div>
+}

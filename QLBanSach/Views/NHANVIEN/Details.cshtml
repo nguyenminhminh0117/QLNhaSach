@@ -1,0 +1,82 @@
+﻿@model QLBanSach.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
+    <h4>Thông tin nhân viên @Model.tennv</h4>
+    <hr />
+    <dl class="dl-horizontal" >
+        <dt>
+            @Html.DisplayNameFor(model => model.tennv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tennv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngaysinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaysinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diachi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diachi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sodienthoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sodienthoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.matkhaunv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.matkhaunv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tinhtrang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tinhtrang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QUYEN.tenquyen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QUYEN.tenquyen)
+        </dd>
+
+    </dl>
+    <p>
+        @Html.ActionLink("Sửa", "Edit", new { id = Model.manv }) |
+        @Html.ActionLink("Trở về", "Index")
+    </p>
+</div>
+

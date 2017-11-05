@@ -1,0 +1,34 @@
+﻿@model QLBanSach.Models.CT_PHIEUNHAP
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
+    <h4>Thông tin chi tiết phiếu nhập </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PHIEUNHAP.manv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHIEUNHAP.manv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SACH.tensach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SACH.tensach)
+        </dd>
+
+    </dl>
+    <p>
+        @Html.ActionLink("Sửa", "Edit", new { @*id = Model.manv*@ }) |
+        @Html.ActionLink("Trở về", "Index")
+    </p>
+</div>
+

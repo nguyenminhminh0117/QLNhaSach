@@ -1,0 +1,58 @@
+﻿@model QLBanSach.Models.PHIEUNHAP
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
+    <h4>Thông tin phiếu nhập @Model.mapn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.soluongnhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.soluongnhap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngaylapphieu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaylapphieu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tongtiennhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tongtiennhap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NHACUNGCAP.tenncc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NHACUNGCAP.tenncc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NHANVIEN.tennv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NHANVIEN.tennv)
+        </dd>
+
+    </dl>
+    <p>
+        @Html.ActionLink("Sửa", "Edit", new { id = Model.mapn }) |
+        @Html.ActionLink("Trở về", "Index")
+    </p>
+</div>
+

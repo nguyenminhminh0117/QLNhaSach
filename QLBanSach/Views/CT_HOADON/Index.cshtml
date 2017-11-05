@@ -1,0 +1,70 @@
+﻿@model IEnumerable<QLBanSach.Models.CT_HOADON>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="card mb-3" style="padding-top:45px;">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Danh sách chi tiết hóa đơn
+    </div>
+    <div class="card-body">
+        <p>
+            @Html.ActionLink("Thêm mới", "Create")
+        </p>
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.timedel)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.HOADON.manv)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SACH.tensach)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.timedel)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.HOADON.manv)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SACH.tensach)
+                        </th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.timedel)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.HOADON.manv)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SACH.tensach)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Chi tiết", "Details", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Xóa", "Delete", new { /* id=item.PrimaryKey */ })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
