@@ -1,0 +1,38 @@
+﻿@model QLBanSach.Models.CT_PHIEUNHAP
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
+    <h3>Xóa thông tin Chi tiết phiếu nhập</h3><hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PHIEUNHAP.manv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHIEUNHAP.manv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SACH.tensach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SACH.tensach)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Trở về", "Index")
+        </div>
+    }
+</div>

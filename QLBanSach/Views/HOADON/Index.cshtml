@@ -1,0 +1,79 @@
+﻿@model IEnumerable<QLBanSach.Models.HOADON>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+<div class="card mb-3" style="padding-top:45px;">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Danh sách hóa đơn
+    </div>
+    <div class="card-body">
+        <p>
+            @Html.ActionLink("Thêm mới", "Create")
+        </p>
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ngaylap)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.tonghoadon)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.KHACHHANG.tenkh)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NHANVIEN.tennv)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ngaylap)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.tonghoadon)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.KHACHHANG.tenkh)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NHANVIEN.tennv)
+                        </th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ngaylap)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.tonghoadon)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.KHACHHANG.tenkh)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NHANVIEN.tennv)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.mahoadon }) 
+                                @Html.ActionLink("Chi tiết", "Details", new { id = item.mahoadon }) 
+                                @Html.ActionLink("Xóa", "Delete", new { id = item.mahoadon })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+﻿@model QLBanSach.Models.BAOCAOTONG
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+}
+
+<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
+    <h4>Thông tin báo cáo tổng ngày @Model.ngay</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tongthu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tongthu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tongchi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tongchi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chenhlech)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chenhlech)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.delflag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.delflag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.timedel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.timedel)
+        </dd>
+
+    </dl>
+    <p>
+        @Html.ActionLink("Sửa", "Edit", new { id = Model.ngay }) |
+        @Html.ActionLink("Trở về", "Index")
+    </p>
+</div>
+
