@@ -10,7 +10,7 @@ using QLBanSach.Models;
 
 namespace QLBanSach.Controllers
 {
-    public class CT_DATHANGController : Controller
+    public class ChiTietDatHangController : Controller
     {
         private QLBS db = new QLBS();
 

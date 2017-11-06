@@ -47,7 +47,7 @@ namespace QLBanSach.Controllers
             else
             {
                 FormsAuthentication.SetAuthCookie(U.email, false);
-                return Json(Url.Action("Index", "Home"));
+                return Json(Url.Action("Index","Home"));
             }
         }
         public ActionResult Logout()

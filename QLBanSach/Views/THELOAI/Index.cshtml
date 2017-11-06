@@ -5,30 +5,48 @@
     Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.tentheloai)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.tentheloai)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.matheloai }) |
-            @Html.ActionLink("Details", "Details", new { id=item.matheloai }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.matheloai })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="card mb-3" style="padding-top:45px;">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Danh sách phiếu nhập
+    </div>
+    <div class="card-body">
+        <p>
+            @Html.ActionLink("Thêm mới", "Create")
+        </p>
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.tentheloai)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.tentheloai)
+                        </th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.tentheloai)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.matheloai }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.matheloai }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.matheloai })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
