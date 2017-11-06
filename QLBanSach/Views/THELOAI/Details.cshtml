@@ -5,10 +5,8 @@
     Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>THELOAI</h4>
+<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
+    <h4>Thông tin thể loại @Model.matheloai</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -20,8 +18,9 @@
         </dd>
 
     </dl>
+    <p>
+        @Html.ActionLink("Sửa", "Edit", new { id = Model.matheloai }) |
+        @Html.ActionLink("Trở về", "Index")
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.matheloai }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+

@@ -10,7 +10,7 @@ using QLBanSach.Models;
 
 namespace QLBanSach.Controllers
 {
-    public class THELOAIController : Controller
+    public class TheLoaiController : Controller
     {
         private QLBS db = new QLBS();
 

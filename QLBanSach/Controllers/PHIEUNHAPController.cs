@@ -10,7 +10,7 @@ using QLBanSach.Models;
 
 namespace QLBanSach.Controllers
 {
-    public class PHIEUNHAPController : Controller
+    public class PhieuNhapController : Controller
     {
         private QLBS db = new QLBS();
 
