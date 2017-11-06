@@ -2,87 +2,57 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="card mb-3" style="padding-top:45px;">
-    <div class="card-header">
-        <i class="fa fa-table"></i> Báo cáo tổng
-    </div>
-    <div class="card-body">
-        <p>
-            @Html.ActionLink("Thêm mới", "Create")
-        </p>
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.tongthu)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.tongchi)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.chenhlech)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.delflag)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.timedel)
-                        </th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.tongthu)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.tongchi)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.chenhlech)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.delflag)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.timedel)
-                        </th>
-                        <th></th>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.tongthu)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.tongchi)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.chenhlech)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.delflag)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.timedel)
-                            </td>
-                            <td>
-                                @Html.ActionLink("Sửa", "Edit", new { id = item.ngay }) |
-                                @Html.ActionLink("Chi tiết", "Details", new { id = item.ngay }) |
-                                @Html.ActionLink("Xóa", "Delete", new { id = item.ngay })
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tongthu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tongchi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chenhlech)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.delflag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.timedel)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tongthu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tongchi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chenhlech)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.delflag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.timedel)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ngay }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ngay }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ngay })
+        </td>
+    </tr>
+}
+
+</table>

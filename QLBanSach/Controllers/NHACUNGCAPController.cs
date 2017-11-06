@@ -14,13 +14,13 @@ namespace QLBanSach.Controllers
     {
         private QLBS db = new QLBS();
 
-        // GET: NHACUNGCAP
+        // GET: NhaCungCap
         public ActionResult Index()
         {
             return View(db.NHACUNGCAPs.ToList());
         }
 
-        // GET: NHACUNGCAP/Details/5
+        // GET: NhaCungCap/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -35,13 +35,13 @@ namespace QLBanSach.Controllers
             return View(nHACUNGCAP);
         }
 
-        // GET: NHACUNGCAP/Create
+        // GET: NhaCungCap/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: NHACUNGCAP/Create
+        // POST: NhaCungCap/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +58,7 @@ namespace QLBanSach.Controllers
             return View(nHACUNGCAP);
         }
 
-        // GET: NHACUNGCAP/Edit/5
+        // GET: NhaCungCap/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace QLBanSach.Controllers
             return View(nHACUNGCAP);
         }
 
-        // POST: NHACUNGCAP/Edit/5
+        // POST: NhaCungCap/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace QLBanSach.Controllers
             return View(nHACUNGCAP);
         }
 
-        // GET: NHACUNGCAP/Delete/5
+        // GET: NhaCungCap/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace QLBanSach.Controllers
             return View(nHACUNGCAP);
         }
 
-        // POST: NHACUNGCAP/Delete/5
+        // POST: NhaCungCap/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)

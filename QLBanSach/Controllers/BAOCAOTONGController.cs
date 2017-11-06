@@ -14,13 +14,13 @@ namespace QLBanSach.Controllers
     {
         private QLBS db = new QLBS();
 
-        // GET: BAOCAOTONG
+        // GET: BaoCaoTong
         public ActionResult Index()
         {
             return View(db.BAOCAOTONGs.ToList());
         }
 
-        // GET: BAOCAOTONG/Details/5
+        // GET: BaoCaoTong/Details/5
         public ActionResult Details(DateTime id)
         {
             if (id == null)
@@ -35,13 +35,13 @@ namespace QLBanSach.Controllers
             return View(bAOCAOTONG);
         }
 
-        // GET: BAOCAOTONG/Create
+        // GET: BaoCaoTong/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: BAOCAOTONG/Create
+        // POST: BaoCaoTong/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +58,7 @@ namespace QLBanSach.Controllers
             return View(bAOCAOTONG);
         }
 
-        // GET: BAOCAOTONG/Edit/5
+        // GET: BaoCaoTong/Edit/5
         public ActionResult Edit(DateTime id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace QLBanSach.Controllers
             return View(bAOCAOTONG);
         }
 
-        // POST: BAOCAOTONG/Edit/5
+        // POST: BaoCaoTong/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace QLBanSach.Controllers
             return View(bAOCAOTONG);
         }
 
-        // GET: BAOCAOTONG/Delete/5
+        // GET: BaoCaoTong/Delete/5
         public ActionResult Delete(DateTime id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace QLBanSach.Controllers
             return View(bAOCAOTONG);
         }
 
-        // POST: BAOCAOTONG/Delete/5
+        // POST: BaoCaoTong/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(DateTime id)

@@ -2,13 +2,15 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
-    <h4>Thông tin nhân viên @Model.tennv</h4>
+<h2>Details</h2>
+
+<div>
+    <h4>NHANVIEN</h4>
     <hr />
-    <dl class="dl-horizontal" >
+    <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.tennv)
         </dt>
@@ -58,6 +60,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.maquyen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.maquyen)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.tinhtrang)
         </dt>
 
@@ -65,18 +75,9 @@
             @Html.DisplayFor(model => model.tinhtrang)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.QUYEN.tenquyen)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.QUYEN.tenquyen)
-        </dd>
-
     </dl>
-    <p>
-        @Html.ActionLink("Sửa", "Edit", new { id = Model.manv }) |
-        @Html.ActionLink("Trở về", "Index")
-    </p>
 </div>
-
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.manv }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

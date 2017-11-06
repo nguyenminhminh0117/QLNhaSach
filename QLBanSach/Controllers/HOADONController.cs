@@ -14,14 +14,13 @@ namespace QLBanSach.Controllers
     {
         private QLBS db = new QLBS();
 
-        // GET: HOADON
+        // GET: HoaDon
         public ActionResult Index()
         {
-            var hOADONs = db.HOADONs.Include(h => h.KHACHHANG).Include(h => h.NHANVIEN);
-            return View(hOADONs.ToList());
+            return View(db.HOADONs.ToList());
         }
 
-        // GET: HOADON/Details/5
+        // GET: HoaDon/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -36,15 +35,13 @@ namespace QLBanSach.Controllers
             return View(hOADON);
         }
 
-        // GET: HOADON/Create
+        // GET: HoaDon/Create
         public ActionResult Create()
         {
-            ViewBag.makh = new SelectList(db.KHACHHANGs, "makh", "tenkh");
-            ViewBag.manv = new SelectList(db.NHANVIENs, "manv", "tennv");
             return View();
         }
 
-        // POST: HOADON/Create
+        // POST: HoaDon/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,12 +55,10 @@ namespace QLBanSach.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.makh = new SelectList(db.KHACHHANGs, "makh", "tenkh", hOADON.makh);
-            ViewBag.manv = new SelectList(db.NHANVIENs, "manv", "tennv", hOADON.manv);
             return View(hOADON);
         }
 
-        // GET: HOADON/Edit/5
+        // GET: HoaDon/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -75,12 +70,10 @@ namespace QLBanSach.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.makh = new SelectList(db.KHACHHANGs, "makh", "tenkh", hOADON.makh);
-            ViewBag.manv = new SelectList(db.NHANVIENs, "manv", "tennv", hOADON.manv);
             return View(hOADON);
         }
 
-        // POST: HOADON/Edit/5
+        // POST: HoaDon/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -93,12 +86,10 @@ namespace QLBanSach.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.makh = new SelectList(db.KHACHHANGs, "makh", "tenkh", hOADON.makh);
-            ViewBag.manv = new SelectList(db.NHANVIENs, "manv", "tennv", hOADON.manv);
             return View(hOADON);
         }
 
-        // GET: HOADON/Delete/5
+        // GET: HoaDon/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -113,7 +104,7 @@ namespace QLBanSach.Controllers
             return View(hOADON);
         }
 
-        // POST: HOADON/Delete/5
+        // POST: HoaDon/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)

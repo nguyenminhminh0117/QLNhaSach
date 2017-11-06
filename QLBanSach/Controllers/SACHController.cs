@@ -17,8 +17,7 @@ namespace QLBanSach.Controllers
         // GET: Sach
         public ActionResult Index()
         {
-            var sACHes = db.SACHes.Include(s => s.THELOAI);
-            return View(sACHes.ToList());
+            return View(db.SACHes.ToList());
         }
 
         // GET: Sach/Details/5
@@ -39,7 +38,6 @@ namespace QLBanSach.Controllers
         // GET: Sach/Create
         public ActionResult Create()
         {
-            ViewBag.matheloai = new SelectList(db.THELOAIs, "matheloai", "tentheloai");
             return View();
         }
 
@@ -57,7 +55,6 @@ namespace QLBanSach.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.matheloai = new SelectList(db.THELOAIs, "matheloai", "tentheloai", sACH.matheloai);
             return View(sACH);
         }
 
@@ -73,7 +70,6 @@ namespace QLBanSach.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.matheloai = new SelectList(db.THELOAIs, "matheloai", "tentheloai", sACH.matheloai);
             return View(sACH);
         }
 
@@ -90,7 +86,6 @@ namespace QLBanSach.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.matheloai = new SelectList(db.THELOAIs, "matheloai", "tentheloai", sACH.matheloai);
             return View(sACH);
         }
 

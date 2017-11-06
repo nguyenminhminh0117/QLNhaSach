@@ -2,11 +2,13 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
-    <h4>Thông tin báo cáo tổng ngày @Model.ngay</h4>
+<h2>Details</h2>
+
+<div>
+    <h4>BAOCAOTONG</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -50,9 +52,8 @@
         </dd>
 
     </dl>
-    <p>
-        @Html.ActionLink("Sửa", "Edit", new { id = Model.ngay }) |
-        @Html.ActionLink("Trở về", "Index")
-    </p>
 </div>
-
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ngay }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

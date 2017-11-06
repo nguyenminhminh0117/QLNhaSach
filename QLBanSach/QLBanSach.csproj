@@ -181,7 +181,7 @@
     <Compile Include="Controllers\BaoCaoTongController.cs" />
     <Compile Include="Controllers\ChiTietDatHangController.cs" />
     <Compile Include="Controllers\ChiTietHoaDonController.cs" />
-    <Compile Include="Controllers\ChiTietPhieuNhap.cs" />
+    <Compile Include="Controllers\ChiTietPhieuNhapController.cs" />
     <Compile Include="Controllers\DatHangController.cs" />
     <Compile Include="Controllers\HoaDonController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -194,73 +194,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BAOCAOTONG.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BK_BAOCAOTONG.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BK_CT_DATHANG.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BK_CT_HOADON.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BK_SACH.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CT_DATHANG.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CT_HOADON.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CT_PHIEUNHAP.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DATHANG.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HOADON.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\KHACHHANG.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NHACUNGCAP.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NHANVIEN.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PHIEUNHAP.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\QLBS.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLBS.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\QLBS.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\QLBS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLBS.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\QUYEN.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SACH.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\THELOAI.cs">
-      <DependentUpon>QLBS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MyRoleProvider.cs" />
+    <Compile Include="Models\BAOCAOTONG.cs" />
+    <Compile Include="Models\BK_BAOCAOTONG.cs" />
+    <Compile Include="Models\BK_CT_DATHANG.cs" />
+    <Compile Include="Models\BK_CT_HOADON.cs" />
+    <Compile Include="Models\BK_SACH.cs" />
+    <Compile Include="Models\CT_DATHANG.cs" />
+    <Compile Include="Models\CT_HOADON.cs" />
+    <Compile Include="Models\CT_PHIEUNHAP.cs" />
+    <Compile Include="Models\DATHANG.cs" />
+    <Compile Include="Models\HOADON.cs" />
+    <Compile Include="Models\KHACHHANG.cs" />
+    <Compile Include="Models\NHACUNGCAP.cs" />
+    <Compile Include="Models\NHANVIEN.cs" />
+    <Compile Include="Models\PHIEUNHAP.cs" />
+    <Compile Include="Models\QLBS.cs" />
+    <Compile Include="Models\QUYEN.cs" />
+    <Compile Include="Models\SACH.cs" />
+    <Compile Include="Models\THELOAI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -291,10 +242,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <EntityDeploy Include="Models\QLBS.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLBS.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <Content Include="Images\icon.ico" />
     <Content Include="Images\image1.gif" />
     <Content Include="Images\image10.gif" />
@@ -327,20 +274,7 @@
     <Content Include="Images\image8.gif" />
     <Content Include="Images\image9.gif" />
     <Content Include="Images\login.png" />
-    <Content Include="Models\QLBS.edmx.diagram">
-      <DependentUpon>QLBS.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
-    <Content Include="Models\QLBS.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLBS.edmx</DependentUpon>
-      <LastGenOutput>QLBS.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\QLBS.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLBS.edmx</DependentUpon>
-      <LastGenOutput>QLBS.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />

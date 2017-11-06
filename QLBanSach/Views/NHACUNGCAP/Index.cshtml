@@ -2,69 +2,45 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="card mb-3" style="padding-top:45px;">
-    <div class="card-header">
-        <i class="fa fa-table"></i> Danh sách nhà cung cấp
-    </div>
-    <div class="card-body">
-        <p>
-            @Html.ActionLink("Thêm mới", "Create")
-        </p>
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.tenncc)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.diachi)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.sdtncc)
-                        </th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.tenncc)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.diachi)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.sdtncc)
-                        </th>
-                        <th></th>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.tenncc)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.diachi)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.sdtncc)
-                            </td>
-                            <td>
-                                @Html.ActionLink("Sửa", "Edit", new { id = item.mancc }) 
-                                @Html.ActionLink("Chi tiết", "Details", new { id = item.mancc }) 
-                                @Html.ActionLink("Xóa", "Delete", new { id = item.mancc })
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tenncc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diachi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sdtncc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tenncc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diachi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sdtncc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.mancc }) |
+            @Html.ActionLink("Details", "Details", new { id=item.mancc }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.mancc })
+        </td>
+    </tr>
+}
+
+</table>

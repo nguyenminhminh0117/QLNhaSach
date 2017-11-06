@@ -2,16 +2,18 @@
 
 @{
     ViewBag.Title = "Edit";
-    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<h2>Edit</h2>
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-
-    <div class="form-horizontal" style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
-        <h4>Sửa thông tin khách hàng</h4>
+    
+    <div class="form-horizontal">
+        <h4>KHACHHANG</h4>
+        <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.makh)
 
@@ -57,12 +59,12 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Lưu" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default" />
             </div>
-        </div>
-        <div>
-            @Html.ActionLink("Trở về", "Index")
         </div>
     </div>
 }
 
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

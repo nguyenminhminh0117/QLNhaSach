@@ -203,7 +203,6 @@ D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Http.xml
 D:\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Http.WebHost.xml
 D:\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.dll
 D:\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.pdb
-D:\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\GitHub\QLNhaSach\QLBanSach\bin\ApplicationInsights.config
 C:\Users\Administrator\Documents\GitHub\QLNhaSach\QLBanSach\bin\QLBanSach.dll.config
 C:\Users\Administrator\Documents\GitHub\QLNhaSach\QLBanSach\bin\QLBanSach.dll

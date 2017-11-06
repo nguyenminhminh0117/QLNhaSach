@@ -2,13 +2,31 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Admin/_LayoutAdmin.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div style="padding-left:50px; padding-top:80px; margin-bottom:20px;">
-    <h4>Thông tin hóa đơn @Model.ngaylap</h4>
+<h2>Details</h2>
+
+<div>
+    <h4>HOADON</h4>
     <hr />
     <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.manv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.makh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.makh)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.ngaylap)
         </dt>
@@ -25,26 +43,9 @@
             @Html.DisplayFor(model => model.tonghoadon)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.KHACHHANG.tenkh)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.KHACHHANG.tenkh)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NHANVIEN.tennv)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NHANVIEN.tennv)
-        </dd>
-
     </dl>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.mahoadon }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
 </div>
-
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.mahoadon }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

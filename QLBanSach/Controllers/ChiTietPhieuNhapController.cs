@@ -10,18 +10,17 @@ using QLBanSach.Models;
 
 namespace QLBanSach.Controllers
 {
-    public class ChiTietPhieuNhap : Controller
+    public class ChiTietPhieuNhapController : Controller
     {
         private QLBS db = new QLBS();
 
-        // GET: CT_PHIEUNHAP
+        // GET: ChiTietPhieuNhap
         public ActionResult Index()
         {
-            var cT_PHIEUNHAP = db.CT_PHIEUNHAP.Include(c => c.PHIEUNHAP).Include(c => c.SACH);
-            return View(cT_PHIEUNHAP.ToList());
+            return View(db.CT_PHIEUNHAP.ToList());
         }
 
-        // GET: CT_PHIEUNHAP/Details/5
+        // GET: ChiTietPhieuNhap/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -36,15 +35,13 @@ namespace QLBanSach.Controllers
             return View(cT_PHIEUNHAP);
         }
 
-        // GET: CT_PHIEUNHAP/Create
+        // GET: ChiTietPhieuNhap/Create
         public ActionResult Create()
         {
-            ViewBag.mapn = new SelectList(db.PHIEUNHAPs, "mapn", "manv");
-            ViewBag.masach = new SelectList(db.SACHes, "masach", "tensach");
             return View();
         }
 
-        // POST: CT_PHIEUNHAP/Create
+        // POST: ChiTietPhieuNhap/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,12 +55,10 @@ namespace QLBanSach.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.mapn = new SelectList(db.PHIEUNHAPs, "mapn", "manv", cT_PHIEUNHAP.mapn);
-            ViewBag.masach = new SelectList(db.SACHes, "masach", "tensach", cT_PHIEUNHAP.masach);
             return View(cT_PHIEUNHAP);
         }
 
-        // GET: CT_PHIEUNHAP/Edit/5
+        // GET: ChiTietPhieuNhap/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -75,12 +70,10 @@ namespace QLBanSach.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.mapn = new SelectList(db.PHIEUNHAPs, "mapn", "manv", cT_PHIEUNHAP.mapn);
-            ViewBag.masach = new SelectList(db.SACHes, "masach", "tensach", cT_PHIEUNHAP.masach);
             return View(cT_PHIEUNHAP);
         }
 
-        // POST: CT_PHIEUNHAP/Edit/5
+        // POST: ChiTietPhieuNhap/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -93,12 +86,10 @@ namespace QLBanSach.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.mapn = new SelectList(db.PHIEUNHAPs, "mapn", "manv", cT_PHIEUNHAP.mapn);
-            ViewBag.masach = new SelectList(db.SACHes, "masach", "tensach", cT_PHIEUNHAP.masach);
             return View(cT_PHIEUNHAP);
         }
 
-        // GET: CT_PHIEUNHAP/Delete/5
+        // GET: ChiTietPhieuNhap/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -113,7 +104,7 @@ namespace QLBanSach.Controllers
             return View(cT_PHIEUNHAP);
         }
 
-        // POST: CT_PHIEUNHAP/Delete/5
+        // POST: ChiTietPhieuNhap/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)

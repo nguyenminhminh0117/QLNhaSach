@@ -17,8 +17,7 @@ namespace QLBanSach.Controllers
         // GET: DatHang
         public ActionResult Index()
         {
-            var dATHANGs = db.DATHANGs.Include(d => d.KHACHHANG);
-            return View(dATHANGs.ToList());
+            return View(db.DATHANGs.ToList());
         }
 
         // GET: DatHang/Details/5
@@ -39,7 +38,6 @@ namespace QLBanSach.Controllers
         // GET: DatHang/Create
         public ActionResult Create()
         {
-            ViewBag.makh = new SelectList(db.KHACHHANGs, "makh", "tenkh");
             return View();
         }
 
@@ -57,7 +55,6 @@ namespace QLBanSach.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.makh = new SelectList(db.KHACHHANGs, "makh", "tenkh", dATHANG.makh);
             return View(dATHANG);
         }
 
@@ -73,7 +70,6 @@ namespace QLBanSach.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.makh = new SelectList(db.KHACHHANGs, "makh", "tenkh", dATHANG.makh);
             return View(dATHANG);
         }
 
@@ -90,7 +86,6 @@ namespace QLBanSach.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.makh = new SelectList(db.KHACHHANGs, "makh", "tenkh", dATHANG.makh);
             return View(dATHANG);
         }
 

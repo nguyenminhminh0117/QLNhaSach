@@ -14,14 +14,13 @@ namespace QLBanSach.Controllers
     {
         private QLBS db = new QLBS();
 
-        // GET: NHANVIEN
+        // GET: NhanVien
         public ActionResult Index()
         {
-            var nHANVIENs = db.NHANVIENs.Include(n => n.QUYEN);
-            return View(nHANVIENs.ToList());
+            return View(db.NHANVIENs.ToList());
         }
 
-        // GET: NHANVIEN/Details/5
+        // GET: NhanVien/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -36,14 +35,13 @@ namespace QLBanSach.Controllers
             return View(nHANVIEN);
         }
 
-        // GET: NHANVIEN/Create
+        // GET: NhanVien/Create
         public ActionResult Create()
         {
-            ViewBag.maquyen = new SelectList(db.QUYENs, "maquyen", "tenquyen");
             return View();
         }
 
-        // POST: NHANVIEN/Create
+        // POST: NhanVien/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -57,11 +55,10 @@ namespace QLBanSach.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.maquyen = new SelectList(db.QUYENs, "maquyen", "tenquyen", nHANVIEN.maquyen);
             return View(nHANVIEN);
         }
 
-        // GET: NHANVIEN/Edit/5
+        // GET: NhanVien/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -73,11 +70,10 @@ namespace QLBanSach.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.maquyen = new SelectList(db.QUYENs, "maquyen", "tenquyen", nHANVIEN.maquyen);
             return View(nHANVIEN);
         }
 
-        // POST: NHANVIEN/Edit/5
+        // POST: NhanVien/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -90,11 +86,10 @@ namespace QLBanSach.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.maquyen = new SelectList(db.QUYENs, "maquyen", "tenquyen", nHANVIEN.maquyen);
             return View(nHANVIEN);
         }
 
-        // GET: NHANVIEN/Delete/5
+        // GET: NhanVien/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -109,7 +104,7 @@ namespace QLBanSach.Controllers
             return View(nHANVIEN);
         }
 
-        // POST: NHANVIEN/Delete/5
+        // POST: NhanVien/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)

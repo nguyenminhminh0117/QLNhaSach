@@ -46,13 +46,13 @@ namespace QLBanSach
             throw new NotImplementedException();
         }
 
-        public override string[] GetRolesForUser(string username)
+        /*public override string[] GetRolesForUser(string username)
         {
             Models.QLBS db = new Models.QLBS();
             string s = db.NHANVIENs.Where(x => x.email == username).FirstOrDefault().QUYEN.maquyen;
             string[] results = { s };
             return results;
-        }
+        }*/
 
         public override string[] GetUsersInRole(string roleName)
         {

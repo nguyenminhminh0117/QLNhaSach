@@ -14,14 +14,13 @@ namespace QLBanSach.Controllers
     {
         private QLBS db = new QLBS();
 
-        // GET: CT_DATHANG
+        // GET: ChiTietDatHang
         public ActionResult Index()
         {
-            var cT_DATHANG = db.CT_DATHANG.Include(c => c.DATHANG).Include(c => c.SACH);
-            return View(cT_DATHANG.ToList());
+            return View(db.CT_DATHANG.ToList());
         }
 
-        // GET: CT_DATHANG/Details/5
+        // GET: ChiTietDatHang/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -36,15 +35,13 @@ namespace QLBanSach.Controllers
             return View(cT_DATHANG);
         }
 
-        // GET: CT_DATHANG/Create
+        // GET: ChiTietDatHang/Create
         public ActionResult Create()
         {
-            ViewBag.madathang = new SelectList(db.DATHANGs, "madathang", "makh");
-            ViewBag.masach = new SelectList(db.SACHes, "masach", "tensach");
             return View();
         }
 
-        // POST: CT_DATHANG/Create
+        // POST: ChiTietDatHang/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,12 +55,10 @@ namespace QLBanSach.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.madathang = new SelectList(db.DATHANGs, "madathang", "makh", cT_DATHANG.madathang);
-            ViewBag.masach = new SelectList(db.SACHes, "masach", "tensach", cT_DATHANG.masach);
             return View(cT_DATHANG);
         }
 
-        // GET: CT_DATHANG/Edit/5
+        // GET: ChiTietDatHang/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -75,12 +70,10 @@ namespace QLBanSach.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.madathang = new SelectList(db.DATHANGs, "madathang", "makh", cT_DATHANG.madathang);
-            ViewBag.masach = new SelectList(db.SACHes, "masach", "tensach", cT_DATHANG.masach);
             return View(cT_DATHANG);
         }
 
-        // POST: CT_DATHANG/Edit/5
+        // POST: ChiTietDatHang/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -93,12 +86,10 @@ namespace QLBanSach.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.madathang = new SelectList(db.DATHANGs, "madathang", "makh", cT_DATHANG.madathang);
-            ViewBag.masach = new SelectList(db.SACHes, "masach", "tensach", cT_DATHANG.masach);
             return View(cT_DATHANG);
         }
 
-        // GET: CT_DATHANG/Delete/5
+        // GET: ChiTietDatHang/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -113,7 +104,7 @@ namespace QLBanSach.Controllers
             return View(cT_DATHANG);
         }
 
-        // POST: CT_DATHANG/Delete/5
+        // POST: ChiTietDatHang/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
