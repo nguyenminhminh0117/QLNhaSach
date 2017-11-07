@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Net;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -41,13 +41,13 @@ namespace QLBanSach.Controllers
             var count = db.KHACHHANGs.Where(x => x.email == U.email && x.matkhaukh == U.matkhaukh).Count();
             if(count == 0)
             {
-                ViewBag.Msg = "Invalid user";
+                ViewBag.Msg = "Sai mật khẩu hoặc email! Mời nhập lại!";
                 return View();
             }
             else
             {
                 FormsAuthentication.SetAuthCookie(U.email, false);
-                return Json(Url.Action("Index","Home"));
+                return RedirectToAction(Url.Action("Index","Home"));
             }
         }
         public ActionResult Logout()

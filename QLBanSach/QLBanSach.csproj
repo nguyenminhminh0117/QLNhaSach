@@ -314,6 +314,7 @@
     <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
     <Content Include="vendor\jquery-easing\jquery.easing.js" />
     <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -366,10 +367,8 @@
     <Content Include="Views\Sach\Index.cshtml" />
     <Content Include="Views\Home\SPTheoTL.cshtml" />
     <Content Include="Views\Home\TheLoai.cshtml" />
-    <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\Admin\_LayoutAdmin.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="Views\Shared\_Login.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Navigation.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
@@ -428,6 +427,7 @@
     <Content Include="Views\TheLoai\Details.cshtml" />
     <Content Include="Views\TheLoai\Edit.cshtml" />
     <Content Include="Views\TheLoai\Index.cshtml" />
+    <Content Include="Views\Home\ThongTinKhachHang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
