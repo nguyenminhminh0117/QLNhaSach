@@ -55,5 +55,22 @@ namespace QLBanSach.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");
         }
+        public ActionResult ThongTinKhachHang(string user)
+        {
+            user = HttpContext.User.Identity.Name;
+            if (user == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            string id = (from kh in db.KHACHHANGs
+                         where kh.email.Equals(user)
+                         select kh.makh).SingleOrDefault();
+            KHACHHANG kHACHHANG = db.KHACHHANGs.Find(id);
+            if (kHACHHANG == null)
+            {
+                return HttpNotFound();
+            }
+            return View(kHACHHANG);
+        }
     }
 }
