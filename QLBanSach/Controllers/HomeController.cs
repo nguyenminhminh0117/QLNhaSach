@@ -52,6 +52,7 @@ namespace QLBanSach.Controllers
         }
         public ActionResult Logout()
         {
+            Session["GioHang"] = null;
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");
         }

@@ -183,6 +183,7 @@
     <Compile Include="Controllers\ChiTietHoaDonController.cs" />
     <Compile Include="Controllers\ChiTietPhieuNhapController.cs" />
     <Compile Include="Controllers\DatHangController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HoaDonController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachHangController.cs" />
@@ -203,6 +204,7 @@
     <Compile Include="Models\CT_HOADON.cs" />
     <Compile Include="Models\CT_PHIEUNHAP.cs" />
     <Compile Include="Models\DATHANG.cs" />
+    <Compile Include="Models\GioHang.cs" />
     <Compile Include="Models\HOADON.cs" />
     <Compile Include="Models\KHACHHANG.cs" />
     <Compile Include="Models\NHACUNGCAP.cs" />
@@ -428,6 +430,8 @@
     <Content Include="Views\TheLoai\Edit.cshtml" />
     <Content Include="Views\TheLoai\Index.cshtml" />
     <Content Include="Views\Home\ThongTinKhachHang.cshtml" />
+    <Content Include="Views\GioHang\GioHangs.cshtml" />
+    <Content Include="Views\Shared\GioHangPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
