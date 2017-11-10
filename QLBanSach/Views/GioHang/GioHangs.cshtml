@@ -1,0 +1,105 @@
+﻿@model IEnumerable<QLBanSach.Models.SACH>
+@using QLBanSach.Models
+@{
+    ViewBag.Title = "GioHangs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var list = Session["GioHang"] as List<GioHang>;
+}
+
+<h2>Giỏ hàng</h2>
+
+@*<div style="background-color:white;width:66%;margin-left:230px">
+        <h2 style="color:red;font-size:200%;text-align:center">Thông tin giỏ hàng</h2>
+        <table class="table-style-one">
+            <tr style="font-weight:bold;text-align:center">
+                <td>Mã sách</td>
+                <td>Tên sách</td>
+                <td>Ảnh bìa</td>
+                <td>Số lượng</td>
+                <td>Giá</td>
+                <td>Thành tiền</td>
+            </tr>
+            @foreach (var item in Model)
+            {
+                //var sach = Model.Single(m => m.MaSach == item.sMaSach);
+                <tr style="text-align:center">
+                    <td>@item.sMaSach</td>
+                    <td>@item.sTenSach</td>
+                    <td><img src="~/images/@item.sAnh" height="70" width="70" /></td>
+                    @using (Html.BeginForm("CapNhatGioHang", "Cart", new { @sMaSP = item.sMaSach }))
+                        {
+                            int maxint = Int32.Parse(sach.SoLuongTon.ToString()) - Int32.Parse(Session["MinBan"].ToString());
+                            <td>
+                                <input type="number" min="1" max=@maxint name="txtSoluong" value="@item.iSoLuongTon" style="background-color:yellow" />
+                            </td>
+                    <td>@item.iSoLuong</td>
+                    <td>@String.Format("{0:0,0}", item.dDonGia)</td>
+                    <td>@String.Format("{0:0,0}", item.dThanhTien)</td>
+                    <td>@Html.ActionLink("Xóa", "XoaGioHang", new { @sMaSP = item.sMaSach })</td>
+                    <td><input type="submit" value="Cập nhật" /></td>
+                </tr>
+            }
+            <tr style="font-weight:bold;text-align:right;color:red">
+                <td colspan="2">Số lượng sách: @ViewBag.TongSoLuong</td>
+                <td colspan="6">Tổng tiền: @String.Format("{0:0,0}", ViewBag.TongTien) VNĐ</td>
+            </tr>
+            @*<tr style="font-weight:bold;text-align:right;color:red">
+                    <td colspan="6">
+                        @Html.ActionLink("Xóa giỏ hàng", "XoaTatCaGioHang")
+                    </td>
+                </tr>
+                <tr style="font-weight:bold;text-align:right;color:red">
+                    <td colspan="8" style="text-align:center">
+                        @Html.ActionLink("Đặt hàng", "DatHang", "Cart")
+                    </td>
+                </tr>
+        </table>
+    </div>*@
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <td>Mã sách</td>
+                    <td>Tên sách</td>
+                    <td>Ảnh bìa</td>
+                    <td>Số lượng</td>
+                    <td>Giá</td>
+                    <td>Thành tiền</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in list)
+                {
+                    var sach = Model.Single(m => m.masach == item.sMaSach);
+
+                    <tr style="text-align:center">
+                        <td>@item.sMaSach</td>
+                        <td>@item.sTenSach</td>
+                        <td><img src="~/images/@item.sAnh" height="70" width="70" /></td>
+                        @using (Html.BeginForm("CapNhatGioHang", "GioHang", new { @sMaSP = item.sMaSach }))
+                {
+                    int maxint = Int32.Parse(sach.soluongton.ToString());
+                            <td>
+                                <input type="number" min="1" max=@maxint name="txtSoluong" value="@item.iSoLuong" style="background-color:yellow" />
+                            </td>
+                            <td>@String.Format("{0:0,0}", item.dDonGia)</td>
+                            <td>@String.Format("{0:0,0}", item.dThanhTien)</td>
+                            <td>@Html.ActionLink("Xóa", "XoaGioHang", new { @sMaSP = item.sMaSach })</td>
+                            <td><input type="submit" value="Cập nhật" /></td>
+                        }
+                    </tr>
+                }
+                <tr style="font-weight:bold;text-align:right;color:red">
+                    <td colspan="4">Số lượng sách: @ViewBag.TongSoLuong</td>
+                    <td colspan="2">Tổng tiền: @String.Format("{0:0,0}", ViewBag.TongTien) VNĐ</td>
+                    <td colspan="2">
+                        @Html.ActionLink("Xóa giỏ hàng", "XoaTatCaGioHang")
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

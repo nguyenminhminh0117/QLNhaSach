@@ -18,14 +18,16 @@
                         <a class="nav-link" href=@Url.Action("ThongTinKhachHang", "Home")>Thông tin khách hàng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Xin chào: @User.Identity.Name</a>
+                        <a class="nav-link" >Xin chào: @User.Identity.Name</a>
                     </li>
+                    @Html.Partial("GioHangPartial"); 
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Logout", "Home")">Logout</a>
                     </li>
                 }
                 else
                 {
+                
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Login", "Home")">
                             <i class="fa fa-fw fa-sign-out"></i>Login

@@ -1,0 +1,10 @@
+﻿<li class="nav-item">
+    <a class="nav-link" href="@Url.Action("GioHangs", "GioHang")">
+        <i class="fa fa-fw fa-shopping-cart"></i>Giỏ hàng @ViewBag.TongSoLuong
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link">
+        <p style="color:white">@TempData["GioHangError"]</p>
+    </a>
+</li>
