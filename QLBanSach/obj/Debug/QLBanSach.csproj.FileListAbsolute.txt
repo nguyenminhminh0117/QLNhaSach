@@ -306,4 +306,6 @@ C:\Users\Administrator\Documents\GitHub\QLNhaSach\QLBanSach\bin\System.Web.Http.
 C:\Users\Administrator\Documents\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.dll
 C:\Users\Administrator\Documents\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.pdb
+D:\GitHub\QLNhaSach\QLBanSach\bin\Castle.Core.dll
+D:\GitHub\QLNhaSach\QLBanSach\bin\Castle.Core.xml
 D:\GitHub\QLNhaSach\QLBanSach\obj\Debug\QLBanSach.csprojResolveAssemblyReference.cache

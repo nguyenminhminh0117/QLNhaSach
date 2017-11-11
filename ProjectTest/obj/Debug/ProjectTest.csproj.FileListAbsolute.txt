@@ -1,0 +1,13 @@
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\ProjectTest.dll
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\ProjectTest.pdb
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\Castle.Core.dll
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\Moq.dll
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\nunit.framework.dll
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\Castle.Core.xml
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\Moq.pdb
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\Moq.xml
+D:\GitHub\QLNhaSach\ProjectTest\bin\Debug\nunit.framework.xml
+D:\GitHub\QLNhaSach\ProjectTest\obj\Debug\ProjectTest.csprojResolveAssemblyReference.cache
+D:\GitHub\QLNhaSach\ProjectTest\obj\Debug\ProjectTest.dll
+D:\GitHub\QLNhaSach\ProjectTest\obj\Debug\ProjectTest.pdb

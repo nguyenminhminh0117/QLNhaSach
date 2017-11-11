@@ -17,7 +17,7 @@ namespace QLBanSach.Controllers
         // GET: KhachHang
         public ActionResult Index()
         {
-            return View(db.KHACHHANGs.ToList());
+            return View();
         }
 
         // GET: KhachHang/Details/5
