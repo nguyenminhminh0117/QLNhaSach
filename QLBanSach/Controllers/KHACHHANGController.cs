@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using QLBanSach.Models;
+using QLBanSach.Repository;
 
 namespace QLBanSach.Controllers
 {
@@ -14,10 +15,14 @@ namespace QLBanSach.Controllers
     {
         private QLBS db = new QLBS();
 
+        private KhachHangRepository KH = new KhachHangRepository();
+
         // GET: KhachHang
         public ActionResult Index()
         {
-            return View();
+            var KHs = KH.SelectAll().ToList();
+
+            return View(KHs);
         }
 
         // GET: KhachHang/Details/5
@@ -27,12 +32,13 @@ namespace QLBanSach.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            KHACHHANG kHACHHANG = db.KHACHHANGs.Find(id);
-            if (kHACHHANG == null)
+            //KHACHHANG kHACHHANG = db.KHACHHANGs.Find(id);
+            var KHs = KH.SelectById(id);
+            if (KHs == null)
             {
                 return HttpNotFound();
             }
-            return View(kHACHHANG);
+            return View(KHs);
         }
 
         // GET: KhachHang/Create
@@ -51,8 +57,8 @@ namespace QLBanSach.Controllers
             kHACHHANG.makh = " ";
             if (ModelState.IsValid)
             {
-                db.KHACHHANGs.Add(kHACHHANG);
-                db.SaveChanges();
+                KH.Insert(kHACHHANG);
+                KH.Save();
                 return RedirectToAction("Index");
             }
 
