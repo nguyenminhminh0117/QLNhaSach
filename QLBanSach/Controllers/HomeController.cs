@@ -38,6 +38,7 @@ namespace QLBanSach.Controllers
         [HttpPost]
         public ActionResult Login(KHACHHANG U)
         {
+            KHACHHANG kh = db.KHACHHANGs.SingleOrDefault(n => n.email == U.email && n.matkhaukh == U.matkhaukh);
             var count = db.KHACHHANGs.Where(x => x.email == U.email && x.matkhaukh == U.matkhaukh).Count();
             if(count == 0)
             {
@@ -46,12 +47,14 @@ namespace QLBanSach.Controllers
             }
             else
             {
+                Session["Taikhoan"] = kh.makh;
                 FormsAuthentication.SetAuthCookie(U.email, false);
                 return RedirectToAction(Url.Action("Index","Home"));
             }
         }
         public ActionResult Logout()
         {
+            Session["Taikhoan"] = null;
             Session["GioHang"] = null;
             FormsAuthentication.SignOut();
             return RedirectToAction("Index", "Home");

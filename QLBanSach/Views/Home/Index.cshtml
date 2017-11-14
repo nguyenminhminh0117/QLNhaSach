@@ -50,10 +50,13 @@
                     <h5>@s.dongiaban</h5>
                     <p class="card-text"> @s.tacgia</p>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer"  style="align-content: center">
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                    <a href="@Url.Action("ThemGioHang","GioHang",new {@sMaSach=s.masach, @strURL=Request.Url.ToString() })">
+                        <img style="padding-left:35px;width:70px;" class="card-img-top" src="~/Images/iconCart.png" alt="Mua">
+                    </a>
                 </div>
             </div>
         </div>
-    }
+    } 
 </div>

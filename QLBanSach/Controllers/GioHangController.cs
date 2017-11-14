@@ -24,6 +24,11 @@ namespace QLBanSach.Controllers
         }
         public ActionResult ThemGioHang(string sMaSach, string strURL)
         {
+            if (Session["Taikhoan"] == null)
+            {
+                TempData["ThemGioHangError"] = "Bạn cân đăng nhập để thực hiện tính năng này.";
+                return RedirectToAction("Index", "Home");
+            }
             List<GioHang> lstGioHang = LayGioHang();
             GioHang sanpham = lstGioHang.Find(n => n.sMaSach == sMaSach);
             if (sanpham == null)
@@ -108,6 +113,62 @@ namespace QLBanSach.Controllers
             List<GioHang> lstGioHang = LayGioHang();
             lstGioHang.Clear();
             return RedirectToAction("GioHangs", "GioHang");
+        }
+
+        [HttpGet]
+        public ActionResult DatHang()
+        {
+            //kiểm tra đăng nhập
+            if (Session["Taikhoan"] == null || Session["Taikhoan"].ToString() == "")
+            {
+                return RedirectToAction("Login", "Home");
+            }
+            if (Session["GioHang"] == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            //lấy giỏ hàng từ session
+            List<GioHang> lstGioHang = LayGioHang();
+            ViewBag.TongSoLuong = TongSoLuong();
+           ViewBag.TongTien = TongTien();
+
+            return View(lstGioHang);
+        }
+        [HttpPost]
+        public ActionResult DatHang(FormCollection collection)
+        {
+            KHACHHANG kh = new KHACHHANG();
+            DATHANG ddh = new DATHANG();
+            List<GioHang> gh = LayGioHang();
+            //Q nghi la thieu ma DATHANG
+            ddh.makh = Session["TaiKhoan"].ToString();
+            ddh.sdt = kh.sodienthoai;
+            ddh.diachi = kh.diachi;
+            ddh.ngaydat = DateTime.Now;
+            var NgayGiao = String.Format("{0:MM/dd/yyyy}", collection["ngaygiao"]);
+            ddh.ngaygiao = DateTime.Parse(NgayGiao);
+            ddh.tongdonhang= int.Parse(TongTien().ToString());
+            ddh.tinhtrang = false;
+            db.DATHANGs.Add(ddh);
+            //db.GetValidationErrors();
+            db.SaveChanges();
+            foreach (var item in gh)
+            {
+                CT_DATHANG ctdh = new CT_DATHANG();
+                ctdh.madathang = ddh.madathang;
+                ctdh.masach = item.sMaSach;
+                ctdh.soluongdat = item.iSoLuong;
+                ctdh.dongia = int.Parse(item.dDonGia.ToString());
+                ctdh.thanhtien = int.Parse(item.dThanhTien.ToString());
+                db.CT_DATHANG.Add(ctdh);
+            }
+            db.SaveChanges();
+            Session["Giohang"] = null;
+            return RedirectToAction("XacNhanDonHang", "GioHang");
+        }
+        public ActionResult XacNhanDonHang()
+        {
+            return View();
         }
     }
 }

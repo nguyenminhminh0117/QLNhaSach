@@ -27,7 +27,11 @@
                 }
                 else
                 {
-                
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <p style="color:white">@TempData["ThemGioHangError"]</p>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Login", "Home")">
                             <i class="fa fa-fw fa-sign-out"></i>Login
