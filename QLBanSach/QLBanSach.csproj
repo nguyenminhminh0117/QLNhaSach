@@ -245,6 +245,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Images\icon.ico" />
+    <Content Include="Images\iconCart.jpg" />
     <Content Include="Images\image1.gif" />
     <Content Include="Images\image10.gif" />
     <Content Include="Images\image11.jpg" />
@@ -432,6 +433,8 @@
     <Content Include="Views\Home\ThongTinKhachHang.cshtml" />
     <Content Include="Views\GioHang\GioHangs.cshtml" />
     <Content Include="Views\Shared\GioHangPartial.cshtml" />
+    <Content Include="Views\GioHang\DatHang.cshtml" />
+    <Content Include="Views\GioHang\XacNhanDonHang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
