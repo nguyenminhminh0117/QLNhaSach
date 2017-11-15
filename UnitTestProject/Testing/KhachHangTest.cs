@@ -22,6 +22,7 @@ namespace UnitTestProject
             Assert.AreEqual("Nam", person.tenkh);
 
         }
+
         [TestMethod]
         public void TaoTaiKhoanKH()
         {
@@ -40,6 +41,15 @@ namespace UnitTestProject
 
             // Assert
             Assert.AreEqual(KH, KH);
+        }
+
+        [TestMethod]
+        public void XoaKhachHang(string id)
+        {
+            KhachHangController KH = new KhachHangController();
+            var result = KH.Delete("KH_00002") as ViewResult;
+
+            
         }
     }
 }
