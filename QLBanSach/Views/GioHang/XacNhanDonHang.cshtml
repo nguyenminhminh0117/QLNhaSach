@@ -3,5 +3,5 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h1 style="background-color:gray;font-size:300%;margin-left:240px;width:65%;color:cyan">Đơn hàng của quý vị đã được chúng tôi ghi nhận. Chúng tôi sẽ liên hệ trong thời gian sớm nhất và giao hàng đúng hẹn.</h1>
-<p style="margin-left: 240px">@Html.ActionLink("Về lại trang chủ", "Home", "Index")</p>
+<button class="btn btn-group" style="margin-left: 240px;color:white;" ><a href="@Url.Action("Index", "Home") ">Về lại trang chủ</a></button>
 
