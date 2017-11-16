@@ -212,6 +212,8 @@
     <Compile Include="Controllers\PhieuNhapController.cs" />
     <Compile Include="Controllers\SachController.cs" />
     <Compile Include="Controllers\TheLoaiController.cs" />
+    <Compile Include="Dao\CTDatHangDao.cs" />
+    <Compile Include="Dao\DatHangDao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

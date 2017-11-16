@@ -19,7 +19,7 @@ namespace UnitTestProject
             KHACHHANG person = (KHACHHANG)result.Model;
 
             // Assert
-            Assert.AreEqual("Nam", person.tenkh);
+            Assert.AreEqual("Nguyễn Thanh Nhân", person.tenkh);
 
         }
 
@@ -48,8 +48,8 @@ namespace UnitTestProject
         {
             KhachHangController KH = new KhachHangController();
             var result = KH.Delete("KH_00002") as ViewResult;
+            //Assert.AreEqual(KH, KH);
 
-            
         }
     }
 }

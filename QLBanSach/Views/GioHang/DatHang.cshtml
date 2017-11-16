@@ -69,20 +69,27 @@
     </table>
     <h2 style="color:red;text-align:center;font-size:300%">Thông tin đặt hàng</h2>
     <table class="table-style-one" align="center">
-        @using (Html.BeginForm("DatHang","GioHang",FormMethod.Post))
+        @using (Html.BeginForm("DatHang", "GioHang", FormMethod.Post))
         {
             @Html.ValidationSummary(true)
-            <tr style="height: 40px; font-weight: bold">
-                <td>Ma DH: </td>
-                <td style="font-weight: bold; color: red"><input type="text" name="maDH" /></td>
-            </tr>
+            @*<tr style="height:40px;font-weight:bold">
+                    <td>mã DH: </td>
+                    <td style="font-weight: bold; color: red"><input type="text" name="maDH" /></td>
+                </tr>*@
             <tr style="height:40px;font-weight:bold">
                 <td>Khách hàng: </td>
                 <td style="font-weight:bold;color:red">@User.Identity.Name</td>
             </tr>
-
+            <tr style="height:40px;font-weight:bold">
+                <td>Số điện thoại : </td>
+                <td style="font-weight:bold;color:red"><input type="text" name="sdt" class="form-group" /></td>
+            </tr>
+            <tr style="height:40px;font-weight:bold">
+                <td>Địa chỉ : </td>
+                <td style="font-weight:bold;color:red"><input type="text" name="diachi" class="form-group" /></td>
+            </tr>
             <tr style="height: 40px; font-weight: bold">
-                <td>Ngày đặt: </td>
+                <td> Ngày đặt : </td>
                 <td style="font-weight: bold; color: red">@DateTime.Now.ToShortDateString()</td>
             </tr>
 

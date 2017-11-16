@@ -1,6 +1,9 @@
-﻿using QLBanSach.Models;
+﻿using QLBanSach.Dao;
+using QLBanSach.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Validation;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,7 +15,7 @@ namespace QLBanSach.Controllers
         QLBS db = new QLBS();
         public List<GioHang> LayGioHang()
         {
-            List<GioHang> lstGioHang = 
+            List<GioHang> lstGioHang =
                 Session["GioHang"] as List<GioHang>;
             if (lstGioHang == null)
             {
@@ -130,28 +133,29 @@ namespace QLBanSach.Controllers
             //lấy giỏ hàng từ session
             List<GioHang> lstGioHang = LayGioHang();
             ViewBag.TongSoLuong = TongSoLuong();
-           ViewBag.TongTien = TongTien();
+            ViewBag.TongTien = TongTien();
 
             return View(lstGioHang);
         }
         [HttpPost]
-        public ActionResult DatHang(FormCollection collection)
+        public ActionResult DatHang(FormCollection collection, string sdt, string diachi, string ngaygiao)
         {
             KHACHHANG kh = new KHACHHANG();
             DATHANG ddh = new DATHANG();
             List<GioHang> gh = LayGioHang();
-            //Q nghi la thieu ma DATHANG
+            ddh.madathang = "";
             ddh.makh = Session["TaiKhoan"].ToString();
-            ddh.sdt = kh.sodienthoai;
-            ddh.diachi = kh.diachi;
+            ddh.sdt = sdt;
+            ddh.diachi = diachi;
             ddh.ngaydat = DateTime.Now;
-            var NgayGiao = String.Format("{0:MM/dd/yyyy}", collection["ngaygiao"]);
+            var NgayGiao = String.Format("{0:MM/dd/yyyy}", ngaygiao);
             ddh.ngaygiao = DateTime.Parse(NgayGiao);
-            ddh.tongdonhang= int.Parse(TongTien().ToString());
+            ddh.tongdonhang = int.Parse(TongTien().ToString());
             ddh.tinhtrang = false;
-            db.DATHANGs.Add(ddh);
-            //db.GetValidationErrors();
-            db.SaveChanges();
+            //db.DATHANGs.Add(ddh);
+            //db.SaveChanges();
+            var id = new DatHangDao().Insert(ddh);
+            var ctddh = new CTDatHangDao();
             foreach (var item in gh)
             {
                 CT_DATHANG ctdh = new CT_DATHANG();
@@ -160,9 +164,11 @@ namespace QLBanSach.Controllers
                 ctdh.soluongdat = item.iSoLuong;
                 ctdh.dongia = int.Parse(item.dDonGia.ToString());
                 ctdh.thanhtien = int.Parse(item.dThanhTien.ToString());
-                db.CT_DATHANG.Add(ctdh);
+                ctdh.delflag = 0;
+                //db.CT_DATHANG.Add(ctdh);
+                ctddh.Insert(ctdh);
             }
-            db.SaveChanges();
+            //db.SaveChanges();
             Session["Giohang"] = null;
             return RedirectToAction("XacNhanDonHang", "GioHang");
         }
